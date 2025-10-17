@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="java.css">
+    <title>Contact</title>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar" id="nav">
+        <img src="logo.png" alt="Ministry Logo" height="50">
+        <div> 
+            <a href="home.html">HOME</a> 
+            <a href="about.html">ABOUT US</a> 
+            <a href="achievements.html" >ACHIEVEMENTS</a>  
+            <a href="schemes.html" >SCHEMES</a> 
+            <a href="news.html">NEWS</a> 
+            <a href="contact.html" class="alcontact" >CONTACT US</a>
+        </div>
+    </nav>
+</header> 
+
+<div class="loader-overlay" id="loader">
+    <div class="loader"></div>
+  </div> 
+
+  <button id="scroll-to-top" onclick="location.href='#nav'">↑</button>
+  <script src="top.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="sticky.js"></script>
+  <script src="active.js"></script>
+  <script src="form.js"></script>
+  <script src="loader.js"></script>
+  
+  <script src="swiper.js"></script> 
+
+
+    <!-- First Content -->
+    <div>
+        <section id="main">
+            <div class="div1">
+            <h1>Get in Touch with Us</h1>
+            <p>Have questions or need assistance? Reach out to us and we’ll be happy to help!</p>
+            <button class="shared-button" onclick="location.href='#about-us'">READ MORE</button> </div>
+        </section>
+    </div>
+
+     <!-- Contact Us Section -->
+
+    <div class="container">
+        <div class="left-panel">
+            <h2>Contact Us</h2>
+            <p>We’re here to assist you with any inquiries or feedback you may have.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> <strong>HEAD OFFICE</strong><br>
+                Ministry of Youth Affairs and Sports Shastri Bhawan,<br>
+                Dr. Rajendra Prasad Road, New Delhi – 110001, India</p>
+                <p><i class="fas fa-phone"></i> <strong>CALL US</strong><br>
+                Phone no.: +91-11-23381220<br>
+                Fax Number: +91-11-23382902</p>
+                <p><i class="fas fa-envelope"></i> <strong>EMAIL US</strong><br>
+                sports@nic.in</p>
+            </div>
+            <div class="social-media">
+                <p>FOLLOW OUR SOCIAL MEDIA</p>
+                <a class="ig" href="https://www.facebook.com" target="_blank"><img src="facebook-logo.png" alt="Facebook" width="50" style="margin-right:10px;" ></a>
+                <a class="ig" href="https://www.instagram.com" target="_blank"><img src="instagram-logo.png" alt="Instagram" width="50"></a>
+                <a class="ig" href="https://twitter.com" target="_blank"><img src="twitter-logo.png" alt="Twitter" width="50"></a>
+                <a class="ig" href="https://www.youtube.com" target="_blank"><img src="youtube-logo.png" alt="YouTube" width="50"></a>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>Send us a message</h2>
+            <p>Fill out the form below with your details and any queries or feedback you may have. Our team will get back to you at the earliest to assist you with your request.</p>
+            <form id="contact-form">
+                
+                <input id="contactName" style="border-radius: 23px;" type="text" placeholder="   NAME" required>
+                <span id="contactNameError" class="contactError"></span>
+                
+
+                <input id="contactPhone" style="border-radius: 23px;" type="text" placeholder="PHONE" required>
+                <div id="contactPhoneError" class="contactError"></div>
+                
+                <input id="contactEmail" style="border-radius: 23px;" type="email" placeholder="   EMAIL" required>
+                <span id="contactEmailError" class="contactError"></span>
+            
+                <textarea id="contactMessage" style="border-radius: 15px;" placeholder="   MESSAGE" rows="5" required></textarea>
+                <span id="contactMessageError" class="contactError"></span>
+            
+                <input type="submit" value="SEND YOUR MESSAGE">
+            </form>
+            
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div> 
+        <iframe 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=77.20401382446289%2C28.613957261560267%2C77.21774101257324%2C28.6195743376698&layer=mapnik" 
+            width="1500" 
+            height="400" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+    </div>
+    
+    <!-- Fourth Content -->
+    <section class="org">
+
+        <!-- Section: Logos -->
+        <h1 class="org-h1" style="color: #293241; font-size: 40px;">SUPPORT ORGANISATION</h1>
+        
+        <!-- Logos Section -->
+        <div class="logo">
+            <img class="png" src="logo1.png" alt="Logo 1">
+            <img class="png" src="logo2.png" alt="Logo 2">
+            <img class="png" src="logo3.png" alt="Logo 3" >
+            <img class="png" src="logo4.png" alt="Logo 4">
+            <img class="png" src="logo5.png" alt="Logo 5">
+            <img class="png" src="logo6.png" alt="Logo 6">
+        </div>
+    </section>
+
+    <!-- Footer Content -->
+    <div class="footer">
+        <footer>
+            <div class="talk"> 
+                <h2 style="font-size: 50px;">LET'S TALK</h2>
+                <p>Join hands with us to empower the <br> next generation of Indian athletes <br> and make sports a way of life!</p>
+             <br>
+             <div>
+                <a href="contact.html">
+                    <button class="startnow">START NOW</button>
+             </a>
+             </div>
+            </div>
+
+            <div class="contact">
+                <div class="contact1">
+                    <h3 style="font-weight: bolder;">CONTACT US</h3>
+                    <p>Address: Ministry of Youth Affairs & Sports, New Delhi, India</p>
+                    <p>Phone: +91-XXXXXXXXXX</p>
+                    <p>Email: contact@sportsindia.gov.in</p>
+                </div>
+
+                <br>
+                <div class="contact2">
+                    <a href="https://www.facebook.com">
+                        <img src="facebook-logo.png" alt="Facebook" width="40" height="40">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="instagram-logo.png" alt="Instagram" width="40" height="40">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="twitter-logo.png" alt="Twitter" width="40" height="40">
+                    </a>
+                    <a href="https://www.youtube.com">
+                        <img src="youtube-logo.png" alt="YouTube" width="40" height="40">
+                    </a>
+                </div>
+                  
+            </div>
+
+            <div class="extra-2">
+                
+                Ministry of Youth Affairs & Sports <br><br>
+                    National Service Scheme <br><br>
+                    Nehru Yuva Kendra Sangathan <br><br>
+                    National Youth Development Fund(NYDF) <br><br>
+                    Standard Operating Procedures for RGNIYD
+                    Training Programmes <br><br>
+                    Payment Gateway Terms & Conditions
+            </div>
+        </footer>
+            <hr>
+            <div class="extra" style=" padding-bottom: 40px;">
+                <p>© 2024 Ministry of Youth Affairs & Sports. All Rights Reserved.</p>
+            </div>
+        
+    </div>
+    <script src="form.js"></script>
+</main>
+
+    
+    
+</body>
+</html>

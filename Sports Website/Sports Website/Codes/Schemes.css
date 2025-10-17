@@ -1,0 +1,415 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+h1, h2 {
+    font-family: 'League Spartan', Verdana, sans-serif;
+}
+
+h3{
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    background-color: black;
+}
+
+/* Header */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    color: #004080;
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px;
+}
+
+header nav {    
+    gap: 10px;
+    padding: 0 10PX;
+}
+
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0 8PX;
+    margin: 0 20PX;
+    position: relative;
+}
+
+header nav a:before {
+    text-decoration: none;
+    content: '';
+    position: absolute;
+    bottom: -8PX;
+    left: 0;
+    width: 0;
+    height: 2PX;
+    background-color: #ff914d;
+    transition: all 0.54s;
+}
+
+header nav a:hover::before {
+    width: 100%;
+
+}
+
+header nav a:hover {
+    color: #ff914d;
+}
+
+/* Main Section */
+
+.main{
+    width: 100%;
+    margin-right: 0;
+    background-color: black;
+}
+
+.div1{
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    margin: 0;
+}
+
+#main * {
+    box-sizing: border-box;
+}
+
+.div1{
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    margin: 0;
+}
+
+#main {
+    position: relative;
+    width: 100vw; 
+    height: 500px; 
+    text-align: center;
+    background-image: url('bg3.jpeg');
+    text-align: left;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin: 0 ;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 0%;
+    margin-right: 0;
+    margin-bottom: 2px;
+    padding-top: 20px;
+    align-content: center;
+}
+
+
+#main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+    margin: 0;
+  }
+
+
+#main h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+    padding-left: 40px;
+    z-index: 1; 
+    line-height: 1.1;
+    text-align: center;
+}
+
+#main p {
+    margin-bottom: 14px;
+    color: white;
+    font-size: 1.1 rem;
+    padding-left: 40px;
+    z-index: 1; 
+    line-height: 1.6;
+    text-align: center;
+}
+
+.shared-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1.75px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #f66b14;
+    color: #f9f9f9;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+   margin-top: 10px;
+}
+
+.shared-button:hover {
+    color: #f66b14;
+    transform: scale(1.1);
+    outline: 2px solid #f9f9f9;
+    box-shadow: 4px 5px 17px -4px black;
+    background-color: #f9f9f9;
+}
+
+.shared-button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f9f9f9;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.shared-button:hover::before {
+    width: 250%;
+}
+
+/* Logos Section */
+
+#org {
+    width: 100%;
+    background-color: white;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.org-h1{
+   padding-top: 30px;
+   text-align: center;
+   background-color: white;
+}
+
+
+
+.logo{
+    display: flex;
+    height: 210px;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    gap: 70px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.png{
+   height: 130px;
+}
+
+footer {
+    background-color: #293241;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    color: white;
+    flex-wrap: wrap;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+user agent stylesheet
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.startnow {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1.75px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #f66b14;
+    color: #f9f9f9;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.startnow:hover {
+    color: #f66b14;
+    transform: scale(1.1);
+    outline: 2px solid #f9f9f9;
+    box-shadow: 4px 5px 17px -4px black;
+    background-color: #f9f9f9;
+}
+
+.startnow::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f9f9f9;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+
+}
+
+.startnow:hover::before {
+    width: 250%;
+}
+
+/*sports-programs */
+
+#sports-programs table{
+    background-color: white;
+    margin-bottom: 3px;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-left: 30px; 
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: 500px;
+
+}
+
+#sports-programs h1{
+    text-align: center;
+    color: #f66b14;
+    font-size: 50px;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    
+}
+
+.heading{
+    background-color: white;
+    line-height: 0.2;
+    padding-top: 20px;
+}
+
+#sports-programs p{
+    color: black;
+    text-align: center;
+    background-color: white;
+    line-height: 1.4;
+}
+
+#sports-programs h3{
+    color: black;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#sports-programs td{
+    align-items: center;
+}
+
+.box{
+    justify-content: center;
+    justify-items: center;
+}
+
+.img{
+    border: black;
+    border-style: solid;
+}
+
+.awards{
+    background-image: url(Awards\ bg\ img.jpeg);
+    color: white;
+    background-size: cover;
+    height: 500px; 
+}
+
+
+.awards h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 45px;
+    color: white;
+}
+
+.awards h3{
+    background:#f7701c;
+    width: 190px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 60px;
+}
+
+.tr{
+
+    justify-content: space-around;
+    margin: 50px;
+}
+.awards td{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
